@@ -12,6 +12,7 @@ public class Main {
         ClassPathXmlApplicationContext applicationContext =
                 new ClassPathXmlApplicationContext("/applicationContext.xml");
         boolean containsFoo = applicationContext.containsBean("foo");
+
         System.out.println(containsFoo);
     }
 }
