@@ -11,7 +11,7 @@
 			http://www.springframework.org/schema/jee 
 			http://www.springframework.org/schema/tx ">
 
-    <context:component-scan base-package="com.everingthing.beginningspring">
+    <context:component-scan base-package="com.everingthing.redis">
         <context:include-filter type="assignable" expression="java.lang.Object" />
     </context:component-scan>
 
