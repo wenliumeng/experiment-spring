@@ -6,7 +6,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 
 @Controller
-public class thymeleafController {
+public class ThymeleafController {
 
 	@RequestMapping(value = "/sb1",method = RequestMethod.GET)
 	public String index(ModelMap map) {
