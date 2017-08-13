@@ -32,7 +32,7 @@ public class HelloWorldControllerTests {
 
 	@Before
 	public void setUp() throws Exception {
-		mvc = MockMvcBuilders.standaloneSetup(new HelloWorldController(infoRepository,redisTemplate)).build();
+		mvc = MockMvcBuilders.standaloneSetup(new HelloWorldController(infoRepository)).build();
 	}
 
 	@Test
