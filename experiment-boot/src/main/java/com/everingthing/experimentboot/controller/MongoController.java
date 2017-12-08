@@ -29,7 +29,7 @@ public class MongoController {
 	@RequestMapping("/mongogetjob1")
 	@Cacheable(value = "one-key")
 	public void getJob(){
-		Map<String,Object> params=new HashMap<String,Object>();
+		Map<String,Object> params=new HashMap<String,Object>(1);
 		params.put("cid", "5959c76db0dfce192dfd1495");
 		Job job = (Job)jobDao.findOne(params,"Java");
 		System.out.println(job.toString());
